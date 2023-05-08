@@ -1,0 +1,149 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "Hotsite";
+}
+
+<div class="row">
+    <div class="col-5">
+        <h1>Iniciativa Saúde da Cidade</h1>
+    <p>
+        Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+    </p>
+    <p>
+        Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+    </p>
+    </div>
+    
+    <div class="col-7">
+        <img src="~/img/saude.jpg" class="img-fluid">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+<div>
+    <h2>Entre em contato!:</h2>
+    <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+    <form action="/Home/Cadastrar" method="POST">
+      <div class="form-group">
+    <label asp-for="Nome">Nome</label>
+    <input asp-for="Nome" type="text" class="form-control" id="exampleInputNome1"  placeholder="Nome">
+
+  </div>
+     
+  <div class="form-group">
+    <label asp-for="Email">Email</label>
+    <input asp-for="Email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+   
+  </div>
+  <div class="form-group">
+    <label asp-for="Mensagem">Mensagem</label>
+    <textarea asp-for="Mensagem" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+
+    </form>
+</div>
+</div>
+    <div class="col-6 container-fluid text-center">     
+        <div class="row mt-3">
+            <div class="col-4">  
+                 <img src="~/img/agenda.jpg" class="img-fluid">
+                 <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Agenda de eventos
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agenda de eventos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+  <li class="list-group-item">10/10/10 10:10 - Evento 1 :
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, eligendi. Quod minima iste quo itaque accusantium aliquam nihil, excepturi quaerat nostrum eius hic beatae impedit ut cum reiciendis, adipisci sint?</li>
+  <li class="list-group-item"> 10/10/10 10:10 - Evento 2 :
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, eligendi. Quod minima iste quo itaque accusantium aliquam nihil, excepturi quaerat nostrum eius hic beatae impedit ut cum reiciendis, adipisci sint?</li>
+  <li class="list-group-item"> 10/10/10 10:10 - Evento 3 :
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, eligendi. Quod minima iste quo itaque accusantium aliquam nihil, excepturi quaerat nostrum eius hic beatae impedit ut cum reiciendis, adipisci sint?</li>
+</ul>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+    <div class="col-4">  
+        <img src="~/img/lampada.jpg" class="img-fluid">
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+  Dicas de vida saudável
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dicas de vida saudável</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <p class="lh-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit omnis at blanditiis rem, officia saepe a ullam enim magni voluptas recusandae similique iusto? Nihil similique adipisci voluptatem perferendis nesciunt!</p>
+<p class="lh-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ut, velit iusto recusandae delectus laboriosam quas, ullam eaque aspernatur laborum eum amet voluptatem qui dignissimos? Dolor provident at voluptatem laborum.</p>
+<p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam quia nemo veniam tenetur nesciunt quos ipsum? Eos laboriosam sit pariatur veniam mollitia, quidem veritatis placeat quasi sapiente aliquam ratione!</p>   
+      </div>
+       
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-4">  
+        <img src="~/img/apoio.jpg" class="img-fluid">
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+  Apoiadores
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Apoiadores</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+  <li class="list-group-item"> Empresa 1 : descrição</li>
+  <li class="list-group-item"> Empresa 2 : descrição</li>
+  <li class="list-group-item"> Empresa 3 : descrição</li>
+</ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
